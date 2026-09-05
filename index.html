@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B5FFF">
+<meta name="description" content="India NOW → THEN → NEXT — understand government, jobs, schemes, money, education and citizen changes.">
+<title>India NOW → THEN → NEXT</title>
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icons/icon-192.svg">
+<link rel="apple-touch-icon" href="./icons/icon-192.svg">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="loading-screen" class="loading-screen" aria-live="polite">
+  <div class="loading-brand">INDIA NOW → THEN → NEXT</div>
+  <div class="loading-spinner" aria-hidden="true"></div>
+  <p id="loading-text">Loading…</p>
+</div>
+<div id="error-screen" class="error-screen hidden" role="alert">
+  <div class="error-card"><div class="error-icon">⚠️</div><h1 id="error-title">Something went wrong while loading.</h1><p id="error-subtitle">Please try again.</p><button id="retry-btn" class="primary-btn" type="button">Try again</button></div>
+</div>
+<section id="screen-onboarding" class="screen hidden">
+ <div class="onboarding-wrap">
+  <div class="brand-mark">INDIA <span>NOW → THEN → NEXT</span></div>
+  <h1 id="intro-title">NOW → THEN → NEXT</h1>
+  <p id="intro-tagline" class="brand-tagline"></p>
+  <p id="intro-explainer" class="brand-explainer"></p>
+  <div class="onboarding-block"><p id="language-question" class="onboarding-question"></p><div id="onboarding-language-grid" class="language-grid"></div></div>
+  <div class="onboarding-block"><p id="profile-question" class="onboarding-question"></p><div id="onboarding-profile-grid" class="profile-grid"></div></div>
+  <p id="onboarding-note" class="onboarding-note"></p>
+ </div>
+</section>
+<div id="app-shell" class="hidden">
+<header class="topbar"><span>INDIA NOW → THEN → NEXT</span><span id="topbar-language" class="topbar-pill"></span></header>
+<main id="main-area">
+<section id="screen-home" class="screen">
+  <div class="home-hero"><div id="home-profile-line" class="profile-line"></div><div id="home-count" class="muted"></div></div>
+  <div class="home-principles" id="home-principles"></div>
+  <div class="home-section"><div class="section-row"><h2 id="for-you-heading" class="section-title"></h2><span id="for-you-note" class="section-note"></span></div><div id="for-you-list" class="card-list"></div></div>
+  <div class="home-section"><div class="section-row"><h2 id="popular-heading" class="section-title"></h2></div><div id="popular-list" class="card-list"></div></div>
+  <div class="home-section"><div class="section-row"><h2 id="categories-heading" class="section-title"></h2></div><div id="category-grid" class="category-grid"></div></div>
+  <div class="home-section"><div class="section-row"><h2 id="all-heading" class="section-title"></h2></div><div id="home-list" class="card-list"></div></div>
+</section>
+<section id="screen-search" class="screen hidden"><h2 id="search-heading" class="section-title"></h2><input type="search" id="search-input" class="search-input"><div id="search-hint" class="search-hint"></div><div id="search-list" class="card-list"></div></section>
+<section id="screen-saved" class="screen hidden"><h2 id="saved-heading" class="section-title"></h2><div id="saved-list" class="card-list"></div></section>
+<section id="screen-about" class="screen hidden"><h2 id="about-heading" class="section-title"></h2><p id="about-description"></p><div id="about-practical" class="about-practical"></div><h3 id="trust-heading" class="section-subtitle"></h3><div id="trust-copy"></div><h3 id="prediction-heading" class="section-subtitle"></h3><p id="prediction-copy"></p><h3 id="language-heading" class="section-subtitle"></h3><div id="about-language-grid" class="language-grid"></div><h3 id="profile-heading" class="section-subtitle"></h3><div id="about-profile-grid" class="profile-grid"></div><p id="about-disclaimer" class="disclaimer"></p></section>
+<section id="screen-detail" class="screen hidden"><button id="detail-back-btn" type="button" class="back-btn"></button><div id="detail-content"></div></section>
+</main>
+<nav id="bottom-nav" class="bottom-nav"><button type="button" class="nav-btn" data-view="home"><span class="nav-icon">🏠</span><span class="nav-label" data-i18n="navHome"></span></button><button type="button" class="nav-btn" data-view="search"><span class="nav-icon">🔍</span><span class="nav-label" data-i18n="navSearch"></span></button><button type="button" class="nav-btn" data-view="saved"><span class="nav-icon">🔖</span><span class="nav-label" data-i18n="navSaved"></span></button><button type="button" class="nav-btn" data-view="about"><span class="nav-icon">ℹ️</span><span class="nav-label" data-i18n="navAbout"></span></button></nav>
+</div>
+<script src="./data.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
